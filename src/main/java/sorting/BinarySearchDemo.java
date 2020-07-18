@@ -9,6 +9,7 @@ public class BinarySearchDemo {
         System.out.println(binarysearch_rightBound(arr, 2));
     }
 
+
     // [left, right] 全为闭区间: 所以while中有等号，条件判断 left/right的更新都是不等: [left, mid-1], [mid+1, right]
     /* 缺陷:
         比如说给你有序数组 arr = [1,2,2,2,3]，target 为 2，此算法返回的索引是 2，没错。
