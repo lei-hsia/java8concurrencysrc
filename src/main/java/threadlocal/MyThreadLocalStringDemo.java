@@ -1,5 +1,6 @@
 package threadlocal;
 
+import java.util.HashMap;
 import java.util.concurrent.CountDownLatch;
 
 public class MyThreadLocalStringDemo {
