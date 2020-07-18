@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.HashMap;
+
 public class BinarySearchDemo {
     public static void main(String[] args) {
         int[] arr = {1,2,2,2,2,2,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
@@ -8,7 +10,6 @@ public class BinarySearchDemo {
         System.out.println(binarysearch_leftBound(arr, 2));
         System.out.println(binarysearch_rightBound(arr, 2));
     }
-
 
     // [left, right] 全为闭区间: 所以while中有等号，条件判断 left/right的更新都是不等: [left, mid-1], [mid+1, right]
     /* 缺陷:
