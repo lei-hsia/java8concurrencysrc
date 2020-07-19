@@ -1,5 +1,11 @@
 package singleton;
 
+/*  饿汉模式: 简单单例模式写法，有线程安全问题
+    singleton:
+        1. 类构造器private
+        2. 持有自己类型的属性
+        3. 对外提供获取instance的静态方法
+* */
 public class SimplestSingleton {
     private static SimplestSingleton singleton;
 
