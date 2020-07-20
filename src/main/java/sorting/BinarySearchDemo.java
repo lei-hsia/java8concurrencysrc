@@ -33,7 +33,7 @@ public class BinarySearchDemo {
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (num == arr[mid]) return mid;
-            else if (num < arr[mid]) right = mid;
+            else if (num < arr[mid]) right = mid; // 不可能是mid，right是达不到的，所以 right=mid
             else left = mid + 1;
         }
         return left;
@@ -46,7 +46,7 @@ public class BinarySearchDemo {
         int left = 0, right = arr.length;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (arr[mid] == num) right = mid; // 找到元素的时候，收缩上界right直到最左边
+            if (arr[mid] == num) right = mid; // 找到元素的时候，收缩上界right直到最左边; 注:都只有这一行不同!!
             else if (num < arr[mid]) right = mid;
             else left = mid + 1;
         }
