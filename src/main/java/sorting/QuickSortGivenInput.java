@@ -2,10 +2,10 @@ package sorting;
 
 public class QuickSortGivenInput {
     public static void main(String[] args) {
-        int[] arr = {2,4,5,6,8,11,15,43,99,21,1};
-        quicksort(arr, 0, arr.length - 1);
+        int[] arr = {2, 4, 5, 6, 8, 11, 15, 43, 99, 21, 1};
+        quicksort(arr, 0, arr.length-1);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+            System.out.print(arr[i]+" ");
         }
     }
 
@@ -15,7 +15,7 @@ public class QuickSortGivenInput {
 
         while (i <= j) {
 
-            while (arr[i] < pivot) ++i; // 等于的时候不移动
+            while (arr[i] < pivot) ++i;
             while (arr[j] > pivot) --j;
 
             if (i <= j) {
@@ -26,7 +26,7 @@ public class QuickSortGivenInput {
             }
         }
 
-        if (left < j) quicksort(arr, left, j);
+        if (left < j)   quicksort(arr, left, j);
         if (i < right) quicksort(arr, i, right);
     }
 }
