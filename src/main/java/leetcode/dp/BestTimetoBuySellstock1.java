@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.dp;
 
 public class BestTimetoBuySellstock1 {
     public int maxProfit(int[] prices) {

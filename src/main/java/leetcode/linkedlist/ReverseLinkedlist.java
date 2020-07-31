@@ -1,6 +1,4 @@
-package leetcode;
-
-import java.util.List;
+package leetcode.linkedlist;
 
 class ListNode {
     int val;

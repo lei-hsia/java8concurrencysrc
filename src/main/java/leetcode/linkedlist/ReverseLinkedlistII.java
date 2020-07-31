@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode.linkedlist;
+
+import leetcode.linkedlist.ListNode;
 
 public class ReverseLinkedlistII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
