@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class MedianTwoSortedArrays {
+public class MedianTwoSortedArrays4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length, n = nums2.length;
         int l = (m + n + 1) / 2;
