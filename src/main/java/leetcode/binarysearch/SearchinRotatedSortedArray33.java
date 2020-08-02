@@ -1,8 +1,7 @@
 package leetcode.binarysearch;
 
 public class SearchinRotatedSortedArray33 {
-    // 实际上是根据nums[mid]和nums[right]的大小，判断应该去那一边搜索: 总是要去sorted的那一边;
-    // 根据mid位置的数的大小，包含这个的是sorted，另一边是rotated
+    // nums[mid]<nums[right]:右半边是sorted的，nums[mid]>nums[right]:左半边是有序的
     public int search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while (left <= right) {
