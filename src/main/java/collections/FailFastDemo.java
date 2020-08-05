@@ -13,12 +13,13 @@ public class FailFastDemo {
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
             String item = iterator.next();
-            if (item.equals("1")){
+            if (item.equals("2")){
                 iterator.remove();
             }
         }
-        while (iterator.hasNext()){
-            String string = iterator.next();
+        Iterator<String> iterator1 = list.iterator();
+        while (iterator1.hasNext()){
+            String string = iterator1.next();
             System.out.println(string);
         }
     }

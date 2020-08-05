@@ -36,7 +36,7 @@ public class BinarySearchDemo {
             else if (num < arr[mid]) right = mid; // 不可能是mid，right是达不到的，所以 right=mid
             else left = mid + 1;
         }
-        return left;
+        return right;
     }
 
     // [left, right): 左闭右开: [left, mid-1], [mid, right]: 寻找左边界
@@ -50,7 +50,7 @@ public class BinarySearchDemo {
             else if (num < arr[mid]) right = mid;
             else left = mid + 1;
         }
-        return left;
+        return right;
     }
 
     // right bound: if (arr[mid] == num) left = mid + 1;
@@ -62,6 +62,6 @@ public class BinarySearchDemo {
             else if (num < arr[mid]) right = mid;
             else left = mid  + 1;
         }
-        return left - 1;
+        return right - 1;
     }
 }
