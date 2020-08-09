@@ -1,5 +1,7 @@
 package netease;
 
+import org.springframework.data.redis.core.RedisTemplate;
+
 import java.util.*;
 
 public class STsmallestDictPermutation {
