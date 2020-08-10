@@ -2,6 +2,10 @@ package sorting;
 
 import java.util.Arrays;
 
+/* 如果本身就是有序的，那么没有要找"小"的元素往前放的过程，遍历一次就完了: O(n)
+*      tmp: 每次都记录当前的值；
+*   如果是selection sort: 每次都记录这次开始遍历的index，就是要插入的index
+*  */
 public class InsertionSort {
 
     // 左边都是有序，右边无序: 每次前进一位，这一位找到应该insert的位置
