@@ -1,4 +1,4 @@
-package sorting;
+package binarysearch;
 
 
 public class  BinarySearchExec {

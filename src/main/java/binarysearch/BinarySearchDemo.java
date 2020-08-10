@@ -1,4 +1,4 @@
-package sorting;
+package binarysearch;
 
 import java.util.HashMap;
 

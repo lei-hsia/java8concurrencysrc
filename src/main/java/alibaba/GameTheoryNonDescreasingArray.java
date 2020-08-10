@@ -1,4 +1,4 @@
-package sorting;
+package alibaba;
 
 import java.util.Scanner;
 
