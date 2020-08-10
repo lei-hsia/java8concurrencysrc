@@ -1,5 +1,6 @@
 package sorting;
 
+/* 两两比较并交换: 所以叫bubble sort */
 public class BubbleSort {
 
     public static void bubblesort(int[] arr) {
