@@ -10,7 +10,7 @@ public class DCLvolatileSingleton {
     public static DCLvolatileSingleton getInstance() {
         if (singleton == null) {
             synchronized (DCLvolatileSingleton.class) {
-                if (singleton == null) {
+                if (singleton == null) { // DCL，防止多线程都进入第一个if这里没有检验，创建多个单例实例
                     singleton = new DCLvolatileSingleton();
                 }
             }
