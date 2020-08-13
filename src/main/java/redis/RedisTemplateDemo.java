@@ -13,6 +13,7 @@ public class RedisTemplateDemo {
 
         try {
             stringRedisTemplate.setEnableTransactionSupport(true);
+            // 加事务: multi & exec: 解决setIfAbsent & expire 不能实现原子性的问题
             stringRedisTemplate.multi();
             Boolean res = stringRedisTemplate.opsForValue().setIfAbsent("lockKey", "val");
             if (res) {
