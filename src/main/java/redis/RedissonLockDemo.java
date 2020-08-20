@@ -5,7 +5,7 @@ import org.redisson.api.RLock;
 
 import java.util.concurrent.TimeUnit;
 
-public class RedissonDemo {
+public class RedissonLockDemo {
 
     private static Redisson redisson;
 
