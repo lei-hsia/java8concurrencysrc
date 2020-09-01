@@ -18,7 +18,7 @@ public class TestSocket {
         while (true) {
             Socket client = server.accept();
             System.out.println("step2: client\t" + client.getPort());
-
+            // new一个线程，因为如果直接client读取那么就阻塞，抛出一个线程单独处理
             new Thread(() -> {
                 try {
                     InputStream in = client.getInputStream();
