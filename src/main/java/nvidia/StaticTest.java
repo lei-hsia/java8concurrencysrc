@@ -6,7 +6,7 @@ public class StaticTest {
         cnt += 9;
     }
     public static void main(String[] args) {
-        System.out.println("cnt= " + cnt); // (6 + 9) / 3: 说明static不管是赋值还是代码块，就是从上往下运算的
+        System.out.println("cnt= " + cnt);
     }
     static {
         cnt /= 3;
