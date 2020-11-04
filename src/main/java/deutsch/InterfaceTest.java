@@ -15,6 +15,24 @@ public class InterfaceTest implements inter{
 // interface: always public
 interface inter{
     default void func1() {
-
+        System.out.println();
     }
 }
+
+interface A {
+    public void a();
+    public void b();
+    public void c();
+}
+
+abstract class B implements A {
+    public void a() {}
+    public void b() {}
+}
+
+class C extends B {
+    public void a() {}
+    @Override
+    public void c() {}
+}
+

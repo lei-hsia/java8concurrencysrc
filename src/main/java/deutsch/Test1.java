@@ -2,7 +2,6 @@ package deutsch;
 
 public class Test1 {
     public static void main(String[] args) {
-
     }
     static void d(){
         //b++;

@@ -8,7 +8,7 @@ public class SuperTest {
 class Sub extends SuperTest {
     // SuperTest'; attempting to assign weaker access privileges ('private'); was 'protected'
     @Override
-    protected Integer getLocalNode(String value, boolean isValid) {
-        return (Integer) super.getLocalNode(value, isValid);
+    protected Number getLocalNode(String value, boolean isValid) {
+        return super.getLocalNode(value, isValid);
     }
 }

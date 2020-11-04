@@ -21,5 +21,13 @@ public class ByteArrayDemo {
         System.out.println("Out 5: "+b2.size());
         b1.writeTo(b2);
         System.out.println("Out 6: "+b1.size());
+        /*
+        *       Out 1: 1
+                Out 2: 5
+                Out 3: 5
+                Out 4: 5
+                Out 5: 0
+                Out 6: 0
+        * */
     }
 }
