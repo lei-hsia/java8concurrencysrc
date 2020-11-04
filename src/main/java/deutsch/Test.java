@@ -4,6 +4,7 @@ public class Test {
     public static void main(String[] args) {
         Integer x = 3;
         Integer y = null;
+        java.lang.String s = "";
         try {
             System.out.println(Integer.compareUnsigned(x,3)==0 || Integer.compareUnsigned(y,0)==0);
         }
