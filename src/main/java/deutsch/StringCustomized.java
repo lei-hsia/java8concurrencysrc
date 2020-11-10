@@ -12,6 +12,5 @@ class Test2 {
     public static void main(String[] args) {
         java.lang.String s = "someString";
         System.out.println();
-        ThreadLocal
     }
 }
