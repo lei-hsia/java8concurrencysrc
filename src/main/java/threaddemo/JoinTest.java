@@ -1,5 +1,8 @@
 package threaddemo;
 
+import java.util.PriorityQueue;
+import java.util.concurrent.PriorityBlockingQueue;
+
 public class JoinTest {
     public static void main(String[] args) throws InterruptedException
     {
@@ -29,5 +32,6 @@ public class JoinTest {
         t.start(); // Line 15
         t.join(); // Waits for this thread to die, then execute others
         t1.start();
+        // TreeMap: Red-Black tree
     }
 }
